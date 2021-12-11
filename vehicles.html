@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style/content.css" />
+    <style>
+       
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+        
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.mercedes-benz.com/etc/designs/brandhub/frontend/static-assets/header/logo.svg" alt="logo" />
+        <h1>Mercedes-Benz</h1>      
+</header>
+<div id="main">
+<nav id="menubar">
+    <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vehicles.html">Vechicles</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="innovation.html">Innovation</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+    </ul>
+</nav>
+<article class="content">
+    <h1>Vechicles</h1>
+    <img class="responsive" src="https://www.mercedes-benz.com/en/vehicles/passenger-cars/slc/roadster/_jcr_content/root/tabgallery/tabitems/tabgalleryitem/image/MQ6-0-image-20200420085934/02-mercedes-benz-vehicles-slc-roadster-r172-3400x1480.jpeg">
+   
+</article>
+<aside class="side">
+    <h1>Links</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vehicles.html">Vechicles</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="innovation.html">Innovation</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+    </ul>
+</aside>
+</div>
+<footer>
+    &copy; Copyright 2021. All Rights Reserved.
+</footer>
+</body>
+</html>
